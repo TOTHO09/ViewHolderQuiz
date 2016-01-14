@@ -16,7 +16,8 @@ public class GridViewFragment extends Fragment {
     public static GridViewFragment newInstance() {
         return new GridViewFragment();
     }
-
+    static final String[] MOBILE_OS = new String[] {
+            "Android", "iOS","Windows", "Blackberry" };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,4 +26,9 @@ public class GridViewFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_gridview, container, false);
     }
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+    }
 }
